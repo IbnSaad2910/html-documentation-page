@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Documentation Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css'>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav id="navbar">
+  <header class="w3-red w3-padding-small">All About HTML</header>
+  <ul>
+    <li><a class="nav-link" href="#What_is_HTML?">What is HTML?</a></li>
+    <li>
+      <a class="nav-link" href="#The_History_of_HTML">The History of HTML</a>
+    </li>
+    <li>
+      <a class="nav-link" href="#What_are_Tags_and_Attributes?">What are Tags and Attributes?</a>
+    </li>
+    <li><a class="nav-link" href="#Golden_Rules_to_Remember">Golden Rules to Remember</a></li>
+    <li><a class="nav-link" href="#Basic_Construction_of_an_HTML_Page">Basic Construction of an HTML Page</a></li>
+    <li>
+      <a class="nav-link" href="#Further_Tags">Further Tags</a>
+    </li>
+    <li><a class="nav-link" href="#How_to_Add_HTML_Headings_to_Your_Web_Page">How to Add HTML Headings to Your Web Page</a></li>
+    <li><a class="nav-link" href="#How_To_Add_Text_In_HTML">How To Add Text In HTML</a></li>
+    <li><a class="nav-link" href="#How_To_Add_Links_In_HTML">How To Add Links In HTML</a></li>
+    <li><a class="nav-link" href="#How_To_Add_Images_In_HTML_To_Your_Website">How To Add Images In HTML To Your Website</a></li>
+    <li>
+      <a class="nav-link" href="#How_To_Make_an_HTML_List">How To Make an HTML List</a>
+    </li>
+    <li><a class="nav-link" href="#How_To_Add_Tables_In_HTML">How To Add Tables In HTML</a></li>
+    <li>
+      <a class="nav-link" href="#How_To_Close_an_HTML_Document"
+        >How To Close an HTML Document</a>
+    </li>
+    <li>
+      <a class="nav-link" href="#Troubleshooting"
+        >Troubleshooting</a>
+    </li>
+    <li><a class="nav-link" href="#Reference">Reference</a></li>
+  </ul>
+</nav>
+<main id="main-doc">
+  <figure class="w3-content" style="width: 20%;">
+    <img class="w3-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/768px-HTML5_logo_and_wordmark.svg.png" max-width="50%">
+  </figure>
+  <section class="main-section" id="What_is_HTML?">
+    <header class="w3-red w3-padding-small">What is HTML?</header>
+    <article>
+      <p>Okay, so this is the only bit of mandatory theory. In order to begin to write HTML, it helps if you know what you are writing.</p>
+
+      <p>HTML is the <strong>language in which most websites are written</strong>. HTML is used to create pages and make them functional.</p>
+      
+      <p>The code used to make them visually appealing is known as CSS and we shall focus on this in a later tutorial. For now, we will focus on <strong>teaching you how to build rather than design</strong>.</p>
+    </article>
+  </section>
+  <section class="main-section" id="The_History_of_HTML">
+    <header class="w3-red w3-padding-small">The History of HTML</header>
+    <article>
+      <p>HTML was first created by Tim Berners-Lee, Robert Cailliau, and others starting in <strong>1989</strong>. It stands for Hyper Text Markup Language.</p>
+      
+      <p>Hypertext means that the document contains <strong>links that allow the reader to jump to other places</strong> in the document or to another document altogether. The latest version is known as HTML5.</p>
+      
+      <p>A <strong>Markup Language</strong> is a way that computers speak to each other to control how text is processed and presented. To do this HTML uses two things: tags and <strong>attributes</strong>.</p>
+    </article>
+  </section>
+  <section class="main-section" id="What_are_Tags_and_Attributes?">
+    <header class="w3-red w3-padding-small">What are Tags and Attributes?</header>
+    <article>
+      <p>Tags and attributes are the basis of HTML.</p>
+
+      <p>They work together but perform different functions – it is worth investing 2 minutes in <strong>differentiating the two.</strong></p>
+      
+      <p><strong>Tags</strong> are used to mark up the start of an HTML element and they are usually enclosed in angle brackets. An example of a tag is: <code class="w3-codespan">&lt;h1&gt;</code>. Most tags must be opened with <code class="w3-codespan">&lt;h1&gt;</code> and closed with <code class="w3-codespan">&lt;/h1&gt;</code> in order to function.</p>
+      
+      <p><strong>Attributes</strong> contain additional pieces of information. Attributes take the form of an opening tag and additional info is placed inside.</p>
+      
+      <p>An example of an attribute is: </p>
+      
+      <code class="w3-code">&lt;img src"mydog.jpg" alt="A photo of my dog."&gt;</code>
+      
+      <p>In this instance, the image source (src) and the alt text (alt) are attributes of the <code class="w3-codespan">&lt;img&gt;</code> tag.</p>
+    </article>
+  </section>
+  <section class="main-section" id="Golden_Rules_to_Remember">
+    <header class="w3-red w3-padding-small">Golden Rules to Remember</header>
+    <article>
+      <ol>
+        <li>The vast majority of tags must be <strong>opened</strong> (<code class="w3-codespan">&lt;tag&gt;</code>) and <strong>closed</strong> (<code class="w3-codespan">&lt;/tag&gt;</code>) with the element information such as a title or text resting between the tags.</li>
+        
+        <li>When using multiple tags, the tags must be <strong>closed in the order in which they were opened</strong>. For example:</li>
+      </ol>
+      <p><code class="w3-code">&lt;strong&gt;&lt;em&gt;This is really important!&lt;/em&gt;&lt;/strong&gt;</code></p>
+    </article>
+  </section>
+  <section class="main-section" id="Basic_Construction_of_an_HTML_Page">
+    <header class="w3-red w3-padding-small">Basic Construction of an HTML Page</header>
+    <p>These tags should be placed underneath each other <strong>at the top of every HTML page</strong> that you create.</p>
+    <div style="padding-left: 3em">
+      <p><code class="w3-codespan">&lt;!DOCTYPE html&gt;</code> - This tag <strong>specifies the language</strong> you will write on the page. In this case, the language is HTML 5.</p>
+      <p><code class="w3-codespan">&lt;html&gt;</code> - This tag signals that from here on we are going to write in HTML code.</p>
+      <p><code class="w3-codespan">&lt;head&gt;</code> - This is where all the <strong>metadata for the page</strong> goes — stuff mostly meant for search engines and other computer programs.</p>
+      <p><code class="w3-codespan">&lt;body&gt;</code> - This is where the <strong>content of the page</strong> goes.</p>
+      <figure>
+        <img class="w3-image" src="https://html.com/wp-content/uploads/html-homepage-layout-demo.png" style="width:100%">
+        <figcaption class="w3-padding-32 w3-large w3-center"><em>This is how your average HTML page is structured visually.</em></figcaption>
+      </figure>
+    </div>
+  </section>
+  <section class="main-section" id="Further_Tags">
+    <header class="w3-red w3-padding-small">Further Tags</header>
+    <article>
+      <p>Inside the <code class="w3-codespan">&lt;head&gt;</code> tag, there is one tag that is always included: <code class="w3-codespan">&lt;title&gt;</code>, but there are others that are just as important:</p>
+      <dl>
+        <dt><code class="w3-codespan">&lt;title&gt;</code></dt>
+        <dd>This is where we <strong>insert the page name</strong> as it will appear at the top of the browser window or tab.</dd>
+      </dl>
+      <dl>
+        <dt><code class="w3-codespan">&lt;meta&gt;</code></dt>
+        <dd>This is where information about the document is stored: character encoding, name (page context), description.</dd>
+      </dl>
+    </article>
+  </section>
+  <section class="main-section" id="How_to_Add_HTML_Headings_to_Your_Web_Page">
+    <header class="w3-red w3-padding-small">How to Add HTML Headings to Your Web Page</header>
+    <article>
+      <p>In HTML, headings are written in the following elements:</p>
+      <ul class="w3-ul">
+        <li>
+          <code class="w3-codespan">&lt;h1&gt;</code>
+          <ul class="w3-ul">
+            <li>
+              <code class="w3-codespan">&lt;h2&gt;</code>
+              <ul class="w3-ul">
+                <li>
+                  <code class="w3-codespan">&lt;h3&gt;</code>
+                  <ul class="w3-ul">
+                    <li>
+                      <code class="w3-codespan">&lt;h4&gt;</code>
+                      <ul class="w3-ul">
+                        <li>
+                          <code class="w3-codespan">&lt;h5&gt;</code>
+                          <ul class="w3-ul">
+                            <li>
+                              <code class="w3-codespan">&lt;h6&gt;</code>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <p>As you might have guessed <code class="w3-codespan">&lt;h1&gt;</code> and <code class="w3-codespan">&lt;h2&gt;</code> should be used for the most important titles, while the remaining tags should be used for sub-headings and less important text.</p>
+      <p><strong>Search engine bots use this order</strong> when deciphering which information is most important on a page.</p>
+    </article>
+  </section>
+  <section class="main-section" id="How_To_Add_Text_In_HTML">
+    <header class="w3-red w3-padding-small">How To Add Text In HTML</header>
+    <article>
+      <p>Adding text to our HTML page is simple using an element opened with the tag<code class="w3-codespan">&lt;p&gt;</code> which <strong>creates a new paragraph</strong>. We place all of our regular text inside the element <code class="w3-codespan">&lt;p&gt;</code>.</p>
+
+      <p>When we write text in HTML, we also have a number of other elements we can use to <strong>control the text or make it appear in a certain way</strong>.</p>
+      <table class="w3-table-all">
+        <thead>
+          <tr class="w3-red">
+            <th>Element</th>
+            <th>Meaning</th>
+            <th>Purpose</th>
+          </tr>
+        </thead>
+        <tr>
+          <td><strong><code>&lt;b&gt;</code></strong></td>
+          <td>Bold</td>
+          <td>Highlight important information</td>
+        </tr>
+        <tr>
+          <td><strong><code>&lt;strong&gt;</code></strong></td>
+          <td>Strong</td>
+          <td>Similarly to bold, to highlight key text</td>
+        </tr>
+        <tr>
+          <td><strong><code>&lt;i&gt;</code></strong></td>
+          <td>Italic</td>
+          <td>To denote text</td>
+        </tr>
+        <tr>
+          <td><strong><code>&lt;em&gt;</code></strong></td>
+          <td>Emphasized Text</td>
+          <td>Usually used as image captions</td>
+        </tr>
+        <tr>
+          <td><strong><code>&lt;mark&gt;</code></strong></td>
+          <td>Marked Text</td>
+          <td>Highlight the background of the text</td>
+        </tr>
+        <tr>
+          <td><strong><code>&lt;small&gt;</code></strong></td>
+          <td>Small Text</td>
+          <td>To shrink the text</td>
+        </tr>
+        <tr>
+          <td><strong><code>&lt;strike&gt;</code></strong></td>
+          <td>Striked Out Text</td>
+          <td>To place a horizontal line across the text</td>
+        </tr>
+        <tr>
+          <td><strong><code>&lt;u&gt;</code></strong></td>
+          <td>Underlined Text</td>
+          <td>Used for links or text highlights</td>
+        </tr>
+        <tr>
+          <td><strong><code>&lt;ins&gt;</code></strong></td>
+          <td>Inserted Text</td>
+          <td>Displayed with an underline to show an inserted text</td>
+        </tr>
+        <tr>
+          <td><strong><code>&lt;sub&gt;</code></strong></td>
+          <td>Subscript Text</td>
+          <td>Typographical stylistic choice</td>
+        </tr>
+        <tr>
+          <td><strong><code>&lt;sup&gt;</code></strong></td>
+          <td>Superscript Text</td>
+          <td>Another typographical presentation style
+</td>
+        </tr>
+      </table>
+      <p>These tags <strong>must</strong> be opened and closed around the text in question.</p>
+    </article>
+  </section>
+  <section class="main-section" id="How_To_Add_Links_In_HTML">
+    <header class="w3-red w3-padding-small">How To Add Links In HTML</header>
+    <article>
+      <p>As you may have noticed, the internet is made up of lots of links.</p>
+
+      <p>Almost everything you click on while surfing the web is a link <strong>takes you to another page</strong> within the website you are visiting or to an external site.</p>
+
+      <p>Links are included in an attribute opened by the <code class="w3-codespan">&lt;a&gt;</code> tag. This element is the first that we’ve met which uses an attribute and so it <strong>looks different to previously mentioned tags</strong>.</p>
+
+      <p>The <code class="w3-codespan">&lt;a&gt;</code> (or anchor) opening tag is written in the format:</p>
+
+      <code class="w3-code">&lt;a href="https://blogging.com/how-to-start-a-blog/"&gt;Your Link Text Here &lt;/a&gt;</code>
+      <p>The <strong>first part</strong> of the attribute <strong>points to the page that will open</strong> once the link is clicked.</p>
+      <p>Meanwhile, the <strong>second part</strong> of the attribute contains the <strong>text which will be displayed</strong> to a visitor in order to entice them to click on that link.</p>
+      <p>If you are building your own website then you will most likely host all of your pages on professional web hosting. In this case, internal links on your website will be <code class="w3-codespan">&lt;a href=”mylinkedpage.html”&gt;Link Here&lt;/a&gt;</code>.</p>
+    </article>
+  </section>
+  <section class="main-section" id="How_To_Add_Images_In_HTML_To_Your_Website">
+    <header class="w3-red w3-padding-small">How To Add Images In HTML To Your Website</header>
+    <article>
+      <p>In today’s modern digital world, images are everything. The <code class="w3-codespan">&lt;img&gt;</code> tag has everything you need to display images on your site. Much like the <code class="w3-codespan">&lt;a&gt;</code> anchor element, <code class="w3-codespan">&lt;img&gt;</code> also contains an attribute.</p>
+      <p>The attribute <em>features information</em> for your computer regarding the <strong>source</strong>, <strong>height</strong>, <strong>width</strong> and <strong>alt text</strong> of the image.</p>
+      <div>
+        <figure>
+          <img class="w3-image" src="https://html.com/wp-content/uploads/html-homepage-property.png" style="width:100%">
+          <figcaption class="w3-padding-32 w3-large w3-center"><em>You can check the file type of an image by right-clicking the item and selecting ‘Properties'.</em></figcaption>
+        </figure>
+      </div>
+      <p>You can also define borders and other styles around the image using the class attribute. However, we shall cover this in a later tutorial.</p>
+      <p>The file types generally used for <strong>image files online are</strong>: .jpg, .png, and (less and less) .gif.</p>
+      <p>Alt text is important to <strong>ensure that your site is ranked correctly</strong> on search sites and also for visually impaired visitors to your site.</p>
+      <p>The <code class="w3-codespan">&lt;img&gt;</code> tag normally is written as follows:</p>
+      <code class="w3-code">&lt;img src="yourimage.jpg" alt="Describe the image" height="X" width="X"&gt;</code>
+    </article>
+  </section>
+  <section class="main-section" id="How_To_Make_an_HTML_List">
+    <header class="w3-red w3-padding-small">How To Make an HTML List</header>
+    <article>
+      In web design, there are 3 different types of lists which you may wish to add to your site.
+      <h3>Ordered List</h3>
+      <p>The first is an <code class="w3-codespan">&lt;ol&gt;</code>: This is an ordered list of contents. For example:</p>
+      <ol>
+        <li>An item</li>
+        <li>Another item</li>
+        <li>Another goes here</li>
+      </ol>
+      <p>Inside the <code class="w3-codespan">&lt;ol&gt;</code> tag we list each item on the list inside <code class="w3-codespan">&lt;li&gt;</code> <code class="w3-codespan">&lt;/li&gt;</code> tags.</p>
+      <p>For example:</p>
+      <div class="w3-code">
+        <span>&lt;ol&gt;</span><br>
+        <span>&lt;li&gt;An item&lt;/li&gt;</span><br>
+        <span>&lt;li&gt;Another item&lt;/li&gt;</span><br>
+        <span>&lt;li&gt;Another goes here&lt;/li&gt;</span><br>
+        <span>&lt;/ol&gt;</span>
+      </div>
+      <h3>Unordered List</h3>
+      <p>The second type of list that you may wish to include is an <code class="w3-codespan">&lt;ul&gt;</code> unordered list. This is better known as a <strong>bullet point list</strong> and contains no numbers.</p>
+      <p>An example of this is:</p>
+      <div class="w3-code">
+        <span>&lt;ul&gt;</span><br>
+        <span>&lt;li&gt;This is&lt;/li&gt;</span><br>
+        <span>&lt;li&gt;An Unordered&lt;/li&gt;</span><br>
+        <span>&lt;li&gt;List&lt;/li&gt;</span><br>
+        <span>&lt;/ul&gt;</span>
+      </div>
+      <h3>Definition List</h3>
+      <p>Finally, you may wish to include a definition list <code class="w3-codespan">&lt;dl&gt;</code> on your page. An example of a <code class="w3-codespan">&lt;dl&gt;</code> list is as follows:</p>
+      <dl>
+        <dt><strong>HTML</strong></dt>
+        <dd>Hypertext markup language is a programming language used to create web pages and is rendered by a web browser.</dd>
+      </dl>
+      <p>The code used for the above is as follows:</p>
+      <div class="w3-code">
+        <span>&lt;dl&gt;</span><br>
+        <span>&lt;dt&gt;Item&lt;/dt&gt;</span><br>
+        <span>&lt;dd&gt;The definition goes here&lt;/dd&gt;</span><br>
+        <span>&lt;/dl&gt;</span>
+      </div>
+    </article>
+  </section>
+  <section class="main-section" id="How_To_Add_Tables_In_HTML">
+    <header class="w3-red w3-padding-small">How To Add Tables In HTML</header>
+    <article>
+      <div>
+        <figure>
+          <img class="w3-image" src="https://html.com/wp-content/uploads/html-hpg-table.png" style="width:100%">
+          <figcaption class="w3-padding-32 w3-large w3-center"><em>Tables can be styled in various ways – Codepen.io offers live previews to keep track of changes.</em></figcaption>
+        </figure>
+      </div>
+      <p>Another way to keep your website looking neat and orderly is through the use of a table.</p>
+      <p>When drawing a table we must open an element with the <code class="w3-codespan">&lt;table&gt;</code> opening tag. Inside this tag, we structure the table using the table rows, <code class="w3-codespan">&lt;tr&gt;</code>, and cells, <code class="w3-codespan">&lt;td&gt;</code>.</p>
+      <p>An example of an HTML table is as follows:</p>
+      <div class="w3-code">
+        <span>&lt;table&gt;</span><br>
+        <span>&lt;tr&gt;</span><br>
+        <span>&lt;td&gt;Row 1 - Column 1&lt;/td&gt;</span><br>
+        <span>&lt;td&gt;Row 1 - Column 2&lt;/td&gt;</span><br>
+        <span>&lt;td&gt;Row 1 - Column 3&lt;/td&gt;</span><br>
+        <span>&lt;/tr&gt;</span><br>
+        <span>&lt;tr&gt;</span><br>
+        <span>&lt;td&gt;Row 2 - Column 1&lt;/td&gt;</span><br>
+        <span>&lt;td&gt;Row 2 - Column 2&lt;/td&gt;</span><br>
+        <span>&lt;td&gt;Row 2 - Column 3&lt;/td&gt;</span><br>
+        <span>&lt;/tr&gt;</span><br>
+        <span>&lt;/table&gt;</span>
+      </div>
+      <p>This will produce a 2-row table with 3 cells in each row.</p>
+      <table class="w3-table-all">
+        <thead>
+          <tr class="w3-red">
+            <th>Table Tag</th>
+            <th>Meaning</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+        <tr>
+          <td><strong><code>&lt;thead&gt;</code></strong></td>
+          <td>Table Head</td>
+          <td>Top of the table</td>
+        </tr>
+        <tr>
+          <td><strong><code>&lt;tbody&gt;</code></strong></td>
+          <td>Table Body</td>
+          <td>Content of the table</td>
+        </tr>
+        <tr>
+          <td><strong><code>&lt;tfoot&gt;</code></strong></td>
+          <td>Table Foot</td>
+          <td>Bottom of the table</td>
+        </tr>
+        <tr>
+          <td><strong><code>&lt;colgroup&gt;</code></strong></td>
+          <td>Column Group</td>
+          <td>Within the table</td>
+        </tr>
+        <tr>
+          <td><strong><code>&lt;mark&gt;</code></strong></td>
+          <td>Marked Text</td>
+          <td>Highlight the background of the text</td>
+        </tr>
+        <tr>
+          <td><strong><code>&lt;small&gt;</code></strong></td>
+          <td>Small Text</td>
+          <td>To shrink the text</td>
+        </tr>
+        <tr>
+          <td><strong><code>&lt;th&gt;</code></strong></td>
+          <td>Table Header</td>
+          <td>Data cell for the table header</td>
+        </tr>
+      </table>
+    </article>
+  </section>
+  <section class="main-section" id="How_To_Close_an_HTML_Document">
+    <header class="w3-red w3-padding-small">How To Close an HTML Document</header>
+    <article>
+      You’ve <strong>reached the end of our absolute beginners HTML tutorial</strong>.
+      <p>The final step we need to complete is to close the <code class=
+w3-codespan>&lt;body&gt;</code> and <code class="w3-codespan">&lt;html&gt;</code> tags at the end of each page using the following HTML code:</p>
+      <div class="w3-code">
+        <span>&lt;/body&gt;</span><br>
+        <span>&lt;/html&gt;</span>
+      </div>
+      <p>You’ve also learned to add headings, text, images, links, lists and basic tables to these pages.</p>
+    </article>
+  </section>
+  <section class="main-section" id="Troubleshooting">
+    <header class="w3-red w3-padding-small">Troubleshooting</header>
+    <article>
+      In case things didn’t work out as intended, simply check your HTML code against the examples below.
+      <p><strong>Index.html troubleshooting code:</strong></p>
+      <div class="w3-code">
+        <span>&lt;!DOCTYPE html&gt;</span><br>
+        <span>&lt;html&gt;</span><br>
+        <span>&lt;head&gt;</span><br>
+        <span>&lt;title&gt;My First Webpage&lt;/title&gt;</span><br>
+        <span>&lt;meta charset="utf-8"&gt;</span><br>
+        <span>&lt;meta name="description" content="This is my first website. It includes lots of information about my life."&gt;</span><br>
+        <span>&lt;/head&gt;</span><br>
+        <span>&lt;body&gt;</span><br>
+        <span>&lt;h1&gt;Welcome to my webpage&lt;/h1&gt;</span><br>
+        <span>&lt;p&gt;Welcome to &lt;em&gt;my&lt;/em&gt; brand new website.&lt;/p&gt;</span><br>
+        <span>&lt;p&gt;This site will be my &lt;strong&gt;new&lt;/strong&gt; home on the web.&lt;/p&gt;</span><br>
+        <span>&lt;a href="/page2.html"&gt;Page2&lt;/a&gt;</span><br>
+        <span>&lt;img src="testpic.jpg" alt="This is a test image" height="42" width="42"&gt;</span><br>
+        <span>&lt;p&gt;This website will have the following benefits for my business:&lt;/p&gt;</span><br>
+        <span>&lt;ul&gt;</span><br>
+        <span>&lt;li&gt;Increased traffic&lt;/li&gt;</span><br>
+        <span>&lt;li&gt;Global Reach&lt;/li&gt;</span><br>
+        <span>&lt;li&gt;Promotional Opportunities&lt;/li&gt;</span><br>
+        <span>&lt;/ul&gt;</span><br>
+        <span>&lt;table&gt;</span><br>
+        <span>&lt;tr&gt;</span><br>
+        <span>&lt;td&gt;Row 1 - Column 1&lt;/td&gt;</span><br>
+        <span>&lt;td&gt;Row 1 - Column 2&lt;/td&gt;</span><br>
+        <span>&lt;/tr&gt;</span><br>
+        <span>&lt;tr&gt;</span><br>
+        <span>&lt;td&gt;Row 2 - Column 1&lt;/td&gt;</span><br>
+        <span>&lt;td&gt;Row 2 - Column 2&lt;/td&gt;</span><br>
+        <span>&lt;/tr&gt;</span><br>
+        <span>&lt;/table&gt;</span><br>
+        <span>&lt;/body&gt;</span><br>
+        <span>&lt;/html&gt;</span>
+      </div>
+      <p><strong>page2.html troubleshooting code:</strong></p>
+      <div class="w3-code">
+        <span>&lt;!DOCTYPE html&gt;</span><br>
+        <span>&lt;html&gt;</span><br>
+        <span>&lt;head&gt;</span><br>
+        <span>&lt;title&gt;My First Webpage&lt;/title&gt;</span><br>
+        <span>&lt;meta charset="utf-8"&gt;</span><br>
+        <span>&lt;meta name="description" content="This is my first website. It includes lots of information about my life."&gt;</span><br>
+        <span>&lt;/head&gt;</span><br>
+        <span>&lt;body&gt;</span><br>
+        <span>&lt;h1&gt;Welcome to my webpage&lt;/h1&gt;</span><br>
+        <span>&lt;p&gt;Welcome to &lt;em&gt;my&lt;/em&gt; brand new website.&lt;/p&gt;</span><br>
+        <span>&lt;p&gt;This site will be my &lt;strong&gt;new&lt;/strong&gt; home on the web.&lt;/p&gt;</span><br>
+        <span>&lt;a href="http://www.google.com"&gt;Google&lt;/a&gt;</span><br>
+        <span>&lt;/body&gt;</span><br>
+        <span>&lt;/html&gt;</span>
+      </div>
+    </article>
+  </section>
+  <section class="main-section" id="Reference">
+    <header class="w3-red w3-padding-small">Reference</header>
+    <article>
+      <ul>
+        <li>
+          All the documentation in this page is taken from
+          <a
+            href="https://html.com/#Creating_Your_First_HTML_Webpage"
+            target="_blank"
+            >HTML.com</a
+          >
+        </li>
+      </ul>
+    </article>
+  </section>
+</main>
+<!-- partial -->
+  
+</body>
+</html>
